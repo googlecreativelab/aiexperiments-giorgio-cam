@@ -59,7 +59,7 @@ Then [follow instructions](https://cloud.google.com/appengine/docs/python/quicks
 
 ## MUSIC
 
-[Racer](https://www.youtube.com/watch?v=YT0k99hCY5I) - by [Giorgio Moroder](https://en.wikipedia.org/wiki/Giorgio_Moroder)
+[Racer](https://www.youtube.com/watch?v=YT0k99hCY5I) by [Giorgio Moroder](https://en.wikipedia.org/wiki/Giorgio_Moroder)
 
 
 ## LICENSE
