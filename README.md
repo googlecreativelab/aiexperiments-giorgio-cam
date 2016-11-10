@@ -1,4 +1,4 @@
-Giorgio Cam combines [Google Cloud Vision API](https://cloud.google.com/vision/) and [MaryTTS](https://github.com/marytts/marytts) to let you make music with your camera. 
+Giorgio Cam combines [Google Cloud Vision API](https://cloud.google.com/vision/) and [MaryTTS](https://github.com/marytts/marytts) so you make music with your camera. 
 
 This is not an official Google product.
 
@@ -56,3 +56,24 @@ pip install -t lib -r requirements.txt
 ```
 
 Then [follow instructions](https://cloud.google.com/appengine/docs/python/quickstart) on launching your App Engine code. 
+
+## MUSIC
+
+[Racer](https://www.youtube.com/watch?v=YT0k99hCY5I) - by [Giorgio Moroder](https://en.wikipedia.org/wiki/Giorgio_Moroder)
+
+
+## LICENSE
+
+Copyright 2016 Google Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
