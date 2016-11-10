@@ -1,4 +1,4 @@
-Giorgio Cam let's you use your camera to make music. It relies on a combination of [Google Cloud Vision API](https://cloud.google.com/vision/) and [MaryTTS](https://github.com/marytts/marytts). 
+Giorgio Cam combines [Google Cloud Vision API](https://cloud.google.com/vision/) and [MaryTTS](https://github.com/marytts/marytts) to let you make music with your camera. 
 
 This is not an official Google product.
 
