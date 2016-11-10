@@ -1,0 +1,6 @@
+server/data/key.json
+node_modules/
+.DS_Store
+*.pyc
+static/build/*
+static/images/font/

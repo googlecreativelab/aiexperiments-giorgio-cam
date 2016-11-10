@@ -1,0 +1,270 @@
+/**
+ * Copyright 2016 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+@import 'common.css';
+
+$topMargin: 40px;
+
+#splash {
+	font-weight: bold;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background-color: black;
+	color: white;
+
+	transition: opacity 0.1s;
+
+	&.disappear {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	* {
+		line-height: 30px;
+		// font-size: 16px;
+		font-size: 20px;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	#learnMore {
+		margin-top: $topMargin;
+		font-size: 18px;
+		display: block;
+		width: 100px;
+		@mixin yellowLink;
+	}
+
+	#titleContainer {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 80%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		min-width: 300px;
+
+		$pink : rgb(255, 82, 184);
+		$purple : rgb(115, 58, 236);
+		$yellow : rgb(255, 241, 6);
+		$teal : rgb(10, 247, 247);
+
+		#title {
+			line-height: 60px;
+			font-size: 50px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+
+			span {
+				line-height: 60px;
+				font-size: 50px;
+				margin-right: 1px;
+
+				&.pink {
+					color: $pink;
+				}
+
+				&.purple {
+					color: $purple;
+				}
+
+				&.teal {
+					color: $teal;
+				}
+
+				&.yellow {
+					color: $yellow;
+				}
+			}
+		}
+
+		#subTitle {
+			margin-top: $topMargin;
+			letter-spacing: 0.8px;
+			line-height: 30px;
+			font-size: 22px;
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		$loaderWidth: 160px;
+		$loaderHeight: 55px;
+
+		#loader {
+			position: relative;
+			margin-top: $topMargin;
+			background-color: black;
+			border: 3px solid white;
+			width: $loaderWidth;
+			height: $loaderHeight;
+			margin-left: auto;
+			margin-right: auto;
+			text-transform: uppercase;
+		    overflow: hidden;
+
+			&.clickable {
+				cursor: pointer;
+
+				transition: transform 0.1s;
+
+				&:hover {
+					transform: scale(1.1);
+				}
+
+				#fillText:active {
+					color: black!important;
+					background-color: white;
+				}
+			}
+
+			#loaderText {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				color: black;
+				background-color: white;
+			}
+
+			#fill {
+				position: absolute;
+				height: 100%;
+				width: 0%;
+				overflow: hidden;
+				background-color: black;
+
+				#fillText {
+					width: $loaderWidth;
+					height: 100%;
+					color: white;
+
+					&:before{
+						background-color: white;
+					}
+				}
+			}
+
+			#loaderText, #fillText {
+				line-height: $loaderHeight;
+				font-size: 22px;
+				text-align: center;
+				font-weight: normal;
+			    padding-left: 18px;
+
+				&:before { 
+					content : ' ';
+					mask-image : url(../images/camera_icon.svg);
+					position: absolute;
+					left: 22px;
+					top: 17px;
+					width: 25px;
+					height: 25px;
+					background-repeat: no-repeat;
+					mask-repeat: no-repeat;
+					background-color: black;
+				}
+			}
+		}
+
+	}
+
+	#buildWith {
+		margin-top: $topMargin;
+	}
+
+	$badgeWidth : 80px;
+	$badgeHeight: 50px;
+	$badgeMargin : 20px;
+	$badegOpacity: 0.7;
+
+	#aiExperiments, #googleFriends {
+		width: $badgeWidth;
+		height: $badgeHeight;
+		position: absolute;
+		bottom: $badgeMargin;
+		opacity: $badegOpacity;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+
+	#aiExperiments {
+		left: $badgeMargin;
+		background-image: url(../images/badgeAI_master.svg);
+
+		&:hover {
+			opacity: 1;
+
+			&:active {
+				opacity: 0.3;
+			}
+		}
+	}
+
+	#googleFriends {
+		cursor: initial;
+		left: calc($badgeWidth + $badgeMargin * 3);
+		background-image: url(../images/badgeFriends_master.svg);	
+	}
+
+	#badgeBreak{
+		$breakHeight: calc($badgeHeight * 0.8);
+		height: $breakHeight;
+		left: calc($badgeWidth + $badgeMargin * 1.8);
+		background-color: white;
+		opacity: calc($badegOpacity / 2);
+		position: absolute;
+		width: 1px;
+		bottom: calc($badgeMargin + ($badgeHeight - $breakHeight) / 2);
+	}
+
+	#privacyAndTerms {
+		position: absolute;
+		bottom: $badgeMargin;
+		right: $badgeMargin;
+		width: auto;
+
+		* {
+			height: 14px;
+			line-height: 14px;
+			font-size: 14px;
+			color: white;
+			display: inline;
+			opacity: $badegOpacity;
+			margin: 2px;
+		}
+
+		a {
+			text-decoration: none;
+			cursor: pointer;
+
+			&:hover {
+				opacity: 1;
+
+				&:active {
+					opacity: 0.3;
+				}
+			}
+		}
+	}
+}
