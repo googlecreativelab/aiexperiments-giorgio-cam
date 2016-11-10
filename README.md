@@ -25,14 +25,6 @@ webpack -p
 
 The back-end uses [Google App Engine](https://cloud.google.com/appengine/) to serve static content and mediate between the two other back-end services: Google Cloud Vision and MaryTTS. 
 
-To install the dependencies so they can be launched within Google App Engine they will need to be installed into a local folder (documented [here](https://cloud.google.com/appengine/docs/python/tools/using-libraries-python-27)).
-
-```bash
-cd server
-mkdir lib
-pip install -t lib -r requirements.txt
-```
-
 ### Google Cloud Vision API
 
 You will need to first enable the API and [generate credentials](https://cloud.google.com/vision/docs/common/auth). Under "Key type", use "JSON" and then download the key.json file. 
@@ -55,4 +47,12 @@ MARY_TTS_PORT = '59125'
 
 ### App Engine
 
-Enabled App Engine, created a project and set your project ID under `application`. You can then launch the back-end server which will communication to the front-end application, Cloud Vision, and MaryTTS server. 
+To install the dependencies so they can be launched within Google App Engine they will need to be installed into a local folder (documented [here](https://cloud.google.com/appengine/docs/python/tools/using-libraries-python-27)).
+
+```bash
+cd server
+mkdir lib
+pip install -t lib -r requirements.txt
+```
+
+Then [follow instructions](https://cloud.google.com/appengine/docs/python/quickstart) on launching your App Engine code. 
