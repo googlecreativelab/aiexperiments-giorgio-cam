@@ -1,6 +1,10 @@
-Giorgio Cam combines [Google Cloud Vision API](https://cloud.google.com/vision/) and [MaryTTS](https://github.com/marytts/marytts) so you make music with your camera. 
+This experiment lets you make music with the computer just by taking a picture. It uses image recognition to label what it sees, then turns those labels into lyrics of a song. Point it at things around you to have fun and make music.
 
 This is not an official Google product.
+
+## CREDITS
+
+Built by Eric Rosenbaum, Yotam Mann, and friends at Google Creative Lab using [MaryTTS](https://github.com/marytts/marytts), Tone.js, and Google [Google Cloud Vision API](https://cloud.google.com/vision/).
 
 ## OVERVIEW
 
@@ -25,7 +29,7 @@ webpack -p
 
 The back-end uses [Google App Engine](https://cloud.google.com/appengine/) to serve static content and mediate between the two other back-end services: Google Cloud Vision and MaryTTS. 
 
-### Google Cloud Vision API
+#### Google Cloud Vision API
 
 You will need to first enable the API and [generate credentials](https://cloud.google.com/vision/docs/common/auth). Under "Key type", use "JSON" and then download the key.json file. 
 
@@ -36,7 +40,7 @@ env_variables:
   GOOGLE_APPLICATION_CREDENTIALS: PATH/TO/CLOUD_VISION_KEY.json
 ```
 
-### MaryTTS
+#### MaryTTS
 
 Download and install [MaryTTS](https://github.com/marytts/marytts). Then run the MaryTTS Server. Add the IP Adress and Port number that MaryTTS is running on to `server/mary.py`. The default location is `http://localhost:59125`
 
@@ -45,7 +49,7 @@ MARY_TTS_URL = 'http://127.0.0.1'
 MARY_TTS_PORT = '59125'
 ```
 
-### App Engine
+#### App Engine
 
 To install the dependencies so they can be launched within Google App Engine they will need to be installed into a local folder (documented [here](https://cloud.google.com/appengine/docs/python/tools/using-libraries-python-27)).
 
