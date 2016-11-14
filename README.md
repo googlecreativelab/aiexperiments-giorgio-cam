@@ -1,4 +1,9 @@
-This experiment lets you make music with the computer just by taking a picture. It uses image recognition to label what it sees, then turns those labels into lyrics of a song. Point it at things around you to have fun and make music.
+## Giorgio Cam
+Take a picture to make music with the computer.
+
+This is an experiment built with machine learning that lets you make music with the computer just by taking a picture. It uses image recognition to label what it sees, then it turns those labels into lyrics of a song.
+
+[https://aiexperiments.withgoogle.com/giorgio-cam](https://aiexperiments.withgoogle.com/giorgio-cam)
 
 This is not an official Google product.
 
