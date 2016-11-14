@@ -1,17 +1,19 @@
 ## Giorgio Cam
 Take a picture to make music with the computer.
 
+## About
+
 This is an experiment built with machine learning that lets you make music with the computer just by taking a picture. It uses image recognition to label what it sees, then it turns those labels into lyrics of a song.
 
 [https://aiexperiments.withgoogle.com/giorgio-cam](https://aiexperiments.withgoogle.com/giorgio-cam)
 
 This is not an official Google product.
 
-## CREDITS
+## Credits
 
 Built by Eric Rosenbaum, Yotam Mann, and friends at Google Creative Lab using [MaryTTS](https://github.com/marytts/marytts), Tone.js, and Google [Google Cloud Vision API](https://cloud.google.com/vision/).
 
-## OVERVIEW
+## Overview
 
 The client-side javascript application captures images using WebRTC. When the user hits the shutter button, an image is sent to the server which then returns an array of labels and confidence scores for that image using Cloud Vision. These labels are dropped into a rhyming template to create the next phrase that the computer will speak. To get the audio of that phrase, the client makes another request to the MaryTTS (text to speech) server which returns a wav file of the audio. That audio is then synced to the music using Tone.js.
 
@@ -30,7 +32,7 @@ Then build all of the files
 webpack -p
 ```
 
-## BACK-END
+## Back-end
 
 The back-end uses [Google App Engine](https://cloud.google.com/appengine/) to serve static content and mediate between the two other back-end services: Google Cloud Vision and MaryTTS. 
 
@@ -66,12 +68,12 @@ pip install -t lib -r requirements.txt
 
 Then [follow instructions](https://cloud.google.com/appengine/docs/python/quickstart) on launching your App Engine code. 
 
-## MUSIC
+## Music
 
 [Racer](https://www.youtube.com/watch?v=YT0k99hCY5I) by [Giorgio Moroder](https://en.wikipedia.org/wiki/Giorgio_Moroder)
 
 
-## LICENSE
+## License
 
 Copyright 2016 Google Inc.
 
