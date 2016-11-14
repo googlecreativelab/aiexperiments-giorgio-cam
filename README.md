@@ -11,7 +11,7 @@ This is not an official Google product.
 
 ## Credits
 
-Built by Eric Rosenbaum, Yotam Mann, and friends at Google Creative Lab using [MaryTTS](https://github.com/marytts/marytts), [Tone.js](https://github.com/Tonejs/Tone.js), and Google [Google Cloud Vision API](https://cloud.google.com/vision/).
+Built by Eric Rosenbaum, Yotam Mann, and friends at Google Creative Lab using [MaryTTS](https://github.com/marytts/marytts), [Tone.js](https://github.com/Tonejs/Tone.js), and [Google Cloud Vision API](https://cloud.google.com/vision/).
 
 ## Overview
 
