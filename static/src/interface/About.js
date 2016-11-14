@@ -56,7 +56,7 @@ export default class About {
 		const video = document.createElement('div')
 		video.id = 'video'
 		//vid YT0k99hCY5I 
-		video.innerHTML = `<iframe id='youtube-iframe' src="https://www.youtube.com/embed/g0tenPCmHFk?modestbranding=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>`
+		video.innerHTML = `<iframe id='youtube-iframe' src="https://www.youtube.com/embed/9d-bvOsmqrY?modestbranding=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>`
 		content.appendChild(video)
 
 		this._ytplayer = null
@@ -87,9 +87,15 @@ export default class About {
 		if (this._ytplayer){
 			this._ytplayer.stopVideo()
 		}
+		if (ga){
+			ga('send', 'event', 'GiorgioCam', 'Click', 'About - Close')
+		}
 	}
 	open(){
 		this._playButton.classList.add('visible')
 		this._container.classList.add('visible')
+		if (ga){
+			ga('send', 'event', 'GiorgioCam', 'Click', 'About - Open')
+		}
 	}
 }
