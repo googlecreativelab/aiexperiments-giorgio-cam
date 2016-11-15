@@ -11,7 +11,7 @@ This is not an official Google product.
 
 ## Credits
 
-Built by [Eric Rosenbaum](https://github.com/ericrosenbaum), [Yotam Mann](https://github.com/tambien), and friends at Google Creative Lab using [MaryTTS](https://github.com/marytts/marytts), [Tone.js](https://github.com/Tonejs/Tone.js), and [Google Cloud Vision API](https://cloud.google.com/vision/).
+Built by [Eric Rosenbaum](https://github.com/ericrosenbaum), [Yotam Mann](https://github.com/tambien), and friends at Google Creative Lab using [MaryTTS](https://github.com/marytts/marytts), [Tone.js](https://github.com/Tonejs/Tone.js), and [Google Cloud Vision API](https://cloud.google.com/vision/). Check out more experiments at [A.I. Experiments](https://aiexperiments.withgoogle.com).
 
 ## Overview
 
