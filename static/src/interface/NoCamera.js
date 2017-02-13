@@ -32,7 +32,7 @@ export default function NoCamera(container){
 
 	const blurb = document.createElement('div')
 	blurb.id = 'blurb'
-	blurb.textContent = 'Since you did\'t allow access to the camera, this experiment won\'t work.'
+	blurb.textContent = 'Since you didn\'t allow access to the camera, this experiment won\'t work.'
 	content.appendChild(blurb)
 
 	/*const restartButton = document.createElement('div')
