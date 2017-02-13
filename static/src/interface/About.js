@@ -56,7 +56,7 @@ export default class About {
 		const video = document.createElement('div')
 		video.id = 'video'
 		//vid YT0k99hCY5I 
-		video.innerHTML = `<iframe id='youtube-iframe' src="https://www.youtube.com/embed/eKeI63VSpto`?modestbranding=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>`
+		video.innerHTML = `<iframe id='youtube-iframe' src="https://www.youtube.com/embed/eKeI63VSpto?modestbranding=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>`
 		content.appendChild(video)
 
 		this._ytplayer = null
