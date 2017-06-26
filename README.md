@@ -49,7 +49,7 @@ env_variables:
 
 #### MaryTTS
 
-Download and install [MaryTTS](https://github.com/marytts/marytts). Then run the MaryTTS Server. Add the IP Adress and Port number that MaryTTS is running on to `server/mary.py`. The default location is `http://localhost:59125`
+Download and install [MaryTTS](https://github.com/marytts/marytts). Then run the MaryTTS Server. Add the IP Address and Port number that MaryTTS is running on to `server/mary.py`. The default location is `http://localhost:59125`
 
 ```python
 MARY_TTS_URL = 'http://127.0.0.1'
